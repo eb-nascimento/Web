@@ -1,0 +1,97 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #eedeee;
+}
+
+#logo {
+  width: 150px;
+  height: 150px;
+  margin-top: 30px;
+  margin-left: 30px;
+  background-color: #eedeee;
+}
+
+h1 {
+  color: red;
+  /*cor do titulo*/
+  font-size: 64px;
+  font-family: "Pacifico", cursive;
+  text-align: center;
+  letter-spacing: -3px;
+  background-color: #eedeee;
+}
+
+nav {
+  background-color: #eedeee;
+}
+
+h2 {
+  color: #bd8fb5;
+  font-size: 34px;
+  font-family: "Pacifico", cursive;
+  text-align: center;
+  font-style: italic;
+  margin-top: 40px;
+}
+
+a {
+  color: gray;
+  font-size: 24px;
+  font-family: "Trebuchet MS", Arial, Verdana, sans-serif;
+  font-weight: bold;
+  text-decoration: none;
+  margin: 10px;
+}
+
+a:hover {
+  color: red;
+  font-size: 36px;
+}
+
+a:active {
+  color: pink;
+}
+
+p {
+  font-size: 16px;
+  font-family: "Trebuchet MS", Arial, Verdana, sans-serif;
+  line-height: 25px;
+  margin: 30px 15px 40px 15px;
+}
+
+#suricatas,
+#fox,
+#esquilo {
+  border-style: solid;
+  border-width: 10px;
+  border-color: white;
+}
+
+iframe {
+  border-style: solid;
+  border-width: 10px;
+  border-color: white;
+}
+
+#destaque {
+  font-size: 26px;
+  color: red;
+}
+
+footer {
+  background-color: black;
+  width: 100%;
+  height: 250px;
+}
+
+#logo-rodape {
+  margin: 40px 0px 0px 40px;
+}
+
+.cor-destaque {
+  color: red;
+}

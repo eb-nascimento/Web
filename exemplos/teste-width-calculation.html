@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <link rel="stylesheet" href="reset.css">
+    <title>Document</title>
+
+    <style>
+        .cbox {
+            box-sizing: content-box;
+            width: 200px;
+            border: 20px solid green;
+            padding: 10px;
+            margin: 10px;
+        }
+
+        .bbox {
+            box-sizing: border-box;
+            width: 200px;
+            border: 20px solid blue;
+            padding: 10px;
+            margin: 10px;
+        }
+
+        .background {
+            width: 200px;
+            height: 100px;
+            margin:auto;
+            background-size: cover;
+            background-position: center;
+            background-image: url('https://www.mailbiz.com.br/wp-content/uploads/2019/12/tenor.gif');
+        }
+    </style>
+</head>
+
+<body>
+    <div class="cbox">content-box</div>
+    <div class="bbox">border-box</div>
+    <div class="background"></div>
+</body>
+
+</html>

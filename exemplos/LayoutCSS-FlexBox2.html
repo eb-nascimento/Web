@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FlexBOX</title>
+
+    <style>
+
+       body > div {
+           background-color: silver;
+           width: 80%;
+           height: 400px;;
+           margin: 20px auto;
+       }
+
+       body > div > div {
+          m-in-width:50px;
+          w-idth:50px;
+          m-in-height: 50px; 
+          height: 50px; 
+          background-color:tomato;
+          border:1px solid brown;
+          text-align: center;
+          flex-grow: 1;
+       }
+
+       body > div:nth-of-type(2) > div:nth-of-type(4) {
+           order:1;
+       }
+       body > div:nth-of-type(2) > div:nth-of-type(3) {
+           order:2;
+       }
+       body > div:nth-of-type(2) > div:nth-of-type(1) {
+           order:3;
+       } 
+       body > div:nth-of-type(2) > div:nth-of-type(2) {
+           order:4;
+       }
+
+
+
+       
+
+       .fx-grow-2 {
+          flex-grow: 2; 
+       } 
+
+       .fx-ord-0 {
+         order:0;  
+       }
+
+       .fx-ord-1 {
+         order:1;  
+       }
+
+       .fx-ord-2 {
+         order:2;  
+       }
+       .fx-ord-2 {
+         order:2;  
+       }
+
+       .fx-ord-3 {
+         order:3;  
+       }
+
+       .fx-ord-4 {
+         order:4;  
+       }
+
+
+
+       .bg-img-1 {
+         background-image: url('https://source.unsplash.com/collection/190727/1600x900'); 
+         background-size: cover;
+         background-position: center; 
+       }
+
+       .txt-white {
+           color:white;
+       }
+
+       .flex {
+         display: flex;   
+       }
+
+       .fx-center-h {
+         justify-content: center;  
+        } 
+        
+        .fx-center-v{
+            align-items: center;  
+        }
+        
+        .fx-center {
+            justify-content: center;  
+            align-items: center;  
+       }
+
+       .fx-end {
+         justify-content: flex-end;  
+       }
+
+       .fx-start {
+        justify-content: flex-start;  
+       }
+
+       .fx-around {
+        justify-content: space-around;  
+       }
+
+       .fx-between {
+        justify-content: space-between;  
+       }
+
+       .fx-evenly {
+        justify-content: space-evenly;  
+       }
+
+       .fx-dir-row {
+         flex-direction: row;
+       }
+       .fx-dir-row-rev {
+         flex-direction: row-reverse;
+       }
+
+       .fx-dir-col {
+         flex-direction: column;
+       }
+
+       .fx-dir-col-rev {
+         flex-direction: column-reverse;
+       }
+
+       .fx-wrap {
+        flex-wrap: wrap;
+       }
+
+       .fx-wrap-rev {
+        flex-wrap: wrap-reverse;
+       }
+
+       .fx-flow-wrap {
+        flex-flow: row wrap;
+       }
+
+      
+
+    </style>
+
+</head>
+<body>
+    <h2>Between</h2>
+    <div class="flex fx-between">
+        <div class="fx-ord-3">1</div>        
+        <div class="fx-ord-1">2</div>        
+        <div class="fx-ord-0">3</div>        
+        <div class="fx-ord-2">4</div>        
+    </div> 
+    
+    <h2>Around</h2>
+    <div class="flex fx-around">
+        <div>1</div>        
+        <div>2</div>        
+        <div>3</div>        
+        <div>4</div>        
+    </div>
+    
+    <h2>Evenly</h2>
+   
+
+      <div class="flex fx-evenly">
+        <div>1</div>        
+        <div>2</div>        
+        <div>3</div>        
+        <div>4</div>        
+      </div>  
+
+<hr>
+
+<h2>flex direction column</h2>
+<div class="flex fx-dir-col">
+  <div>1</div>        
+  <div>2</div>        
+  <div>3</div>        
+  <div>4</div>        
+</div> 
+
+<h2>flex direction column reverse</h2>
+<div class="flex fx-dir-col-rev">
+    <div>1</div>        
+    <div>2</div>        
+    <div>3</div>        
+    <div>4</div>        
+  </div> 
+
+  <h2>flex direction column fx-end</h2>
+  <div class="flex fx-dir-col fx-end">
+    <div>1</div>        
+    <div>2</div>        
+    <div>3</div>        
+    <div>4</div>        
+  </div> 
+  
+  <h2>flex direction column reverse fx-end</h2>
+  <div class="flex fx-dir-col-rev fx-end">
+      <div>1</div>        
+      <div>2</div>        
+      <div>3</div>        
+      <div>4</div>        
+    </div> 
+
+
+<hr>
+
+  <h2>flex direction row</h2>
+<div class="flex fx-dir-row">
+  <div>1</div>        
+  <div>2</div>        
+  <div>3</div>        
+  <div>4</div>        
+</div> 
+
+<h2>flex direction row reverse</h2>
+<div class="flex fx-dir-row-rev ">
+    <div>1</div>        
+    <div>2</div>        
+    <div>3</div>        
+    <div>4</div>        
+  </div> 
+
+<h2>flex direction row + end </h2>
+<div class="flex fx-dir-row fx-end">
+    <div>1</div>        
+    <div>2</div>        
+    <div>3</div>        
+    <div>4</div>        
+  </div> 
+
+  <h2>flex direction row reverse + end</h2>
+  <div class="flex fx-dir-row-rev fx-end">
+      <div>1</div>        
+      <div>2</div>        
+      <div>3</div>        
+      <div>4</div>        
+    </div>
+<hr>
+
+<h2>No Wrap (Padrão)</h2>
+<div class="flex ">
+    <div>1</div>        
+    <div>2</div>        
+    <div>3</div>        
+    <div>4</div>        
+    <div>5</div>        
+    <div>6</div>        
+    <div>7</div>        
+    <div>8</div>        
+    <div>9</div>        
+    <div>10</div>        
+    <div>11</div>        
+    <div>12</div>        
+    <div>13</div>        
+    <div>14</div>        
+    <div>15</div>        
+    <div>16</div>        
+    <div>17</div>        
+    <div>18</div>        
+    <div>19</div>        
+    <div>20</div>        
+    <div>21</div>        
+    <div>22</div>        
+</div>
+
+<h2>Wrap </h2>
+<div class="flex fx-wrap">
+    <div>1</div>        
+    <div>2</div>        
+    <div>3</div>        
+    <div>4</div>        
+    <div>5</div>        
+    <div>6</div>        
+    <div>7</div>        
+    <div>8</div>        
+    <div>9</div>        
+    <div>10</div>        
+    <div>11</div>        
+    <div>12</div>        
+    <div>13</div>        
+    <div>14</div>        
+    <div>15</div>        
+    <div>16</div>        
+    <div>17</div>        
+    <div>18</div>        
+    <div>19</div>        
+    <div>20</div>        
+    <div>21</div>        
+    <div>22</div>        
+</div>
+
+<h2>Wrap reverse </h2>
+<div class="flex fx-wrap-rev">
+    <div>1</div>        
+    <div>2</div>        
+    <div>3</div>        
+    <div>4</div>        
+    <div>5</div>        
+    <div>6</div>        
+    <div>7</div>        
+    <div>8</div>        
+    <div>9</div>        
+    <div>10</div>        
+    <div>11</div>        
+    <div>12</div>        
+    <div>13</div>        
+    <div>14</div>        
+    <div>15</div>        
+    <div>16</div>        
+    <div>17</div>        
+    <div>18</div>        
+    <div>19</div>        
+    <div>20</div>        
+    <div>21</div>        
+    <div>22</div>        
+</div>
+
+<hr>
+
+<h2>Flow + Wrap </h2>
+<div class="flex fx-flow-wrap">
+    <div>1</div>        
+    <div>2</div>        
+    <div>3</div>        
+    <div>4</div>        
+    <div>5</div>        
+    <div>6</div>        
+    <div>7</div>        
+    <div>8</div>        
+    <div>9</div>        
+    <div>10</div>        
+    <div>11</div>        
+    <div>12</div>        
+    <div>13</div>        
+    <div>14</div>        
+    <div class="fx-grow-2">15</div>        
+    <div>16</div>        
+    <div>17</div>        
+    <div>18</div>        
+    <div>19</div>        
+    <div>20</div>        
+    <div>21</div>        
+    <div>22</div>        
+</div>
+
+
+<div class="flex fx-center">
+    <p>texto centralizado</p>        
+</div>
+
+<div class="flex fx-center bg-img-1 txt-white">
+    <h1>texto centralizado</h1>        
+</div>
+
+
+</body>
+</html>

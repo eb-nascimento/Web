@@ -1,0 +1,21 @@
+.container{
+    display: flex;
+    flex-direction: column;
+}
+
+.div1{
+    background-color: blue;
+}
+
+.div2{
+    background-color: green;
+}
+
+.div3{
+    background-color: yellow;
+}
+
+.div4{
+    background-color: red;
+}
+
