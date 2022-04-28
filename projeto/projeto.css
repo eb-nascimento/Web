@@ -1,0 +1,20 @@
+.container {
+  display: flex;
+}
+
+.container__sidebar {
+  width: 30%;
+  height: 500px;
+  background-color: burlywood;
+}
+
+.container__main {
+  /* Take the remaining width */
+  flex: 1;
+
+  /* Make it scrollable */
+  overflow: auto;
+}
+header {
+  background-color: brown;
+}
