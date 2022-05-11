@@ -1,0 +1,136 @@
+.corpo {
+  background-color: #f3f0e0;
+}
+
+.navbar {
+  border-radius: 30px;
+}
+
+.navbar-nav {
+  width: 1200px;
+  display: flex;
+  justify-content: space-around;
+  font-size: 20px;
+  margin-bottom: 10px;
+  border-radius: 10px;
+}
+
+header {
+  background-image: url("img/header.jpg");
+  padding: 20px;
+  box-shadow: 8px 8px 40px #343330;
+}
+
+h1 {
+  text-align: center;
+  color: black;
+  font-size: 70px;
+  margin-bottom: 40px;
+}
+
+.flex {
+  display: flex;
+}
+
+.flex-around {
+  justify-content: space-around;
+}
+
+.start {
+  flex-direction: row;
+  padding: 20px;
+  margin: 20px;
+}
+
+.end {
+  flex-direction: row-reverse;
+  padding: 20px;
+  margin: 20px;
+}
+
+#portifolioteste {
+  background-image: url(img/photography1thewowstyle.jpg);
+  text-align: center;
+  height: 337px;
+  width: 600px;
+  color: black;
+  text-decoration: none;
+  border-radius: 15px;
+  margin: 50px;
+  padding: 20px;
+}
+
+#estudioteste {
+  background-image: url(img/estudio.jpg);
+  text-align: center;
+  height: 337px;
+  width: 600px;
+  color: black;
+  text-decoration: none;
+  border-radius: 15px;
+  margin: 50px;
+  padding: 20px;
+}
+
+.container {
+  width: 100%;
+  /*flex: 1;
+  overflow: auto;*/
+  margin: auto;
+  text-align: justify;
+  padding: 15px;
+  border-radius: 10px;
+  text-align: center;
+  background-color: #d9d7c8;
+  box-shadow: 5px 5px 10px black;
+}
+
+#img {
+  margin: 20px;
+  max-width: 300px;
+  max-height: 275px;
+  width: auto;
+  height: auto;
+  border-radius: 20px;
+}
+
+#conteudo {
+  flex-wrap: wrap;
+  background-color: #f3f0e0;
+  box-shadow: 5px 5px 10px black;
+  border-radius: 10px;
+  padding: 15px;
+  margin: 20px;
+}
+h2 {
+  padding: 20px;
+}
+
+legend {
+  text-align: center;
+}
+
+.rodape {
+  justify-content: space-around;
+  display: flex;
+  margin: 20px;
+  padding: 20px;
+  background-color: #f3f0e0;
+  box-shadow: 8px 8px 40px #343330;
+  border-radius: 20px;
+  align-items: center;
+}
+
+footer {
+  justify-content: space-around;
+  box-shadow: 8px 8px 40px #343330;
+  margin: 20px;
+  padding: 20px;
+  border-radius: 20px;
+  background-color: #d9d7c8;
+}
+
+#input_msg{
+  width: 300px;
+  height: 100px;
+}
